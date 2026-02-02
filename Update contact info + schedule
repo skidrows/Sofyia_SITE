@@ -145,7 +145,7 @@
 <div class="price-box" data-type="lashes">
 <h3>Ламінування вій</h3>
 <div class="price-item"><span>Ламінування</span><b>уточнюйте</b></div>
-<p class="muted">Ціна залежить від матеріалів та комплексу догляду.</p>
+<p class="muted"><b>Ціна:</b> 700 грн</p>
 </div>
 </section>
 <!-- ABOUT -->
@@ -176,6 +176,10 @@
 <div class="card">
 <h3>💬 Telegram</h3>
 <p>+380955059133</p>
+</div>
+<div class="card">
+<h3>Графік роботи</h3>
+<p>Пн–Нд: <b>8:00 – 22:00</b></p>
 </div>
 </div>
 <a class="btn center-btn" href="https://t.me/+380955059133" target="_blank">
