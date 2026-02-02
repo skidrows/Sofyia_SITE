@@ -210,3 +210,96 @@ footer{
   .two-col{grid-template-columns: 1fr}
   .price-item{flex-direction:column; align-items:flex-start}
 }
+
+
+/* Brand link instead of <strong> */
+nav .brand{
+  font-weight: 800;
+  color: var(--text);
+  text-decoration: none;
+}
+nav .brand:hover{ opacity: .9; }
+
+/* Active nav item */
+.nav-links a.active{
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Expandable service details */
+.details{
+  margin-top: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+.details summary{
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--accent);
+  list-style: none;
+}
+.details summary::-webkit-details-marker{ display:none; }
+.details summary:after{
+  content:" ▾";
+  opacity:.8;
+}
+.details[open] summary:after{ content:" ▴"; }
+.check{
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+.check li{ margin: 6px 0; }
+
+/* Prices page */
+.hero.compact{
+  padding: 26px 22px;
+}
+.price-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 10px;
+}
+.price-col{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.price-col-head h2{
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+.price-list{
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+.price-item{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255,255,255,.03);
+}
+.price-item strong{
+  font-size: 16px;
+  white-space: nowrap;
+}
+.note{
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  background: rgba(0,0,0,.12);
+}
+
+/* Responsive for price columns */
+@media (max-width: 880px){
+  .price-columns{ grid-template-columns: 1fr; }
+}
